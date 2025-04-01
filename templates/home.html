@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Spam Detection</title>
+</head>
+<body>
+    <h2>Email Spam Detector</h2>
+    <form action="{{ url_for('predict') }}" method="POST">
+        <textarea name="message" rows="5" cols="50" placeholder="Type your email here..."></textarea><br>
+        <button type="submit">Check Spam</button>
+    </form>
+</body>
+</html>
